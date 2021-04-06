@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="915b93f4-4eec-4d23-b62c-b88e9a14c820" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="276781896">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1045187903">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="4810" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="4810" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <folding>
+                <marker date="1617747976105" expanded="true" signature="1201:1554" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="1653:2617" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="3758:3763" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="3758:3818" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="3843:6526" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="4056:4312" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="4690:5191" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="5274:5325" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="5347:5627" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="5924:5930" ph="..." />
+                <marker date="1617747976105" expanded="true" signature="6224:6229" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>snake</find>
+      <find>import tkinter as tk\nfrom tkinter import Canvas\nimport random\n\n\nclass Snake\:\n    def __init__\(self\)\:\n        self\.w \= tk\.Tk\(\)\n        self\.w\.attributes\(\'\-fullscreen\'\, True\)\n        self\.fullScreenState \= False\n        self\.w\.title\(\&quot;snake\&quot;\)\n        self\.snakeBodies \= \[\]\n        self\.xMOVEMENT \= 10\n        self\.yMOVEMENT \= 0\n        self\.width\, self\.height \= self\.w\.winfo_screenwidth\(\)\, self\.w\.winfo_screenheight\(\)\n        self\.LEFT_BORDER \= 50\n        self\.RIGHT_BORDER \= self\.width \- 50\n        self\.TOP_BORDER \= 50\n        self\.BOTTOM_BORDER \= self\.height\-50\n        self\.w\.geometry\(\&quot;\%dx\%d\&quot; \% \(self\.width\, self\.height\)\)\n        self\.w\.configure\(bg\=\'black\'\)\n        self\.canvas \= Canvas\(self\.w\, width\=self\.width\, height\=self\.height\)\n        self\.canvas\.configure\(bg\=\&quot;black\&quot;\)\n        self\.canvas\.pack\(\)\n        self\.bindAll\(\)\n        self\.alive \= True\n        self\.ate \= False\n        self\.previousDirection \= \&quot;Right\&quot;\n        self\.direction \= \&quot;Right\&quot;\n        self\.initSnake\(\)\n        self\.generateFood\(\)\n        self\.w\.after\(75\, self\.performActions\)\n        self\.w\.mainloop\(\)\n\n\n    def bindAll\(self\)\:\n        self\.w\.bind\(\&quot;\&lt;F11\&gt;\&quot;\, self\.toggleFullScreen\)\n        self\.w\.bind\(\&quot;\&lt;Escape\&gt;\&quot;\, self\.quitFullScreen\)\n        self\.w\.bind\(\&quot;\&lt;Return\&gt;\&quot;\, self\.quit\)\n        self\.w\.bind\(\&quot;\&lt;Left\&gt;\&quot;\, self\.left\)\n        self\.w\.bind\(\&quot;\&lt;Right\&gt;\&quot;\, self\.right\)\n        self\.w\.bind\(\&quot;\&lt;Up\&gt;\&quot;\, self\.up\)\n        self\.w\.bind\(\&quot;\&lt;Down\&gt;\&quot;\, self\.down\)\n        self\.w\.bind\(\&quot;r\&quot;\, self\.stop\)\n        self\.w\.bind\(\&quot;p\&quot;\, self\.start\)\n\n    def quit\(self\, event\)\:\n        print\(\&quot;Closed\&quot;\)\n        self\.w\.destroy\(\)\n\n    def toggleFullScreen\(self\, event\)\:\n        self\.fullScreenState \= not self\.fullScreenState\n        self\.w\.attributes\(\&quot;\-fullscreen\&quot;\, self\.fullScreenState\)\n\n    def quitFullScreen\(self\, event\)\:\n        self\.fullScreenState \= False\n        self\.w\.attributes\(\&quot;\-fullscreen\&quot;\, self\.fullScreenState\)\n\n    def initSnake\(self\)\:\n        x1\, y1 \= random\.randint\(self\.LEFT_BORDER\, self\.RIGHT_BORDER\)\, random\.randint\(self\.TOP_BORDER\, self\.BOTTOM_BORDER\)\n        x2\, y2 \= x1 \+ 10\, y1 \+ 10\n        for i in range\(10\)\:\n            self\.snakeBodies\.append\(self\.canvas\.create_rectangle\(x1 \- i \* 15\, y1\, x2 \- i \* 15\, y2\, outline\=\&quot;white\&quot;\, fill\=\&quot;blue\&quot;\)\)\n\n    def moveSnake\(self\)\:\n        if self\.alive \=\= False\:\n            return\n        head \= self\.snakeBodies\[0\]\n        self\.canvas\.move\(head\, self\.xMOVEMENT\, self\.yMOVEMENT\)\n        newHeadX1\, newHeadY1\, newHeadX2\, newHeadY2 \= self\.canvas\.coords\(head\)\n        self\.canvas\.delete\(self\.snakeBodies\[\-1\]\)\n        self\.snakeBodies \= \[self\.canvas\.create_rectangle\(newHeadX1\, newHeadY1\, newHeadX2\, newHeadY2\, outline\=\&quot;white\&quot;\, fill\=\&quot;blue\&quot;\)\] \+ self\.snakeBodies\[\:\-1\]\n\n    def performActions\(self\)\:\n        self\.moveSnake\(\)\n        self\.w\.after\(75\, self\.performActions\)\n        self\.checkCollisions\(\)\n        if self\.ate\:\n            self\.generateFood\(\)\n\n    def generateFood\(self\)\:\n        x1\, y1 \= random\.randint\(self\.LEFT_BORDER\, self\.RIGHT_BORDER\)\, random\.randint\(self\.TOP_BORDER\, self\.BOTTOM_BORDER\)\n        x2\, y2 \= x1 \+ 10\, y1 \+ 10\n        self\.food \= self\.canvas\.create_rectangle\(x1\, y1\, x2\, y2\, outline\=\&quot;white\&quot;\, fill\=\&quot;red\&quot;\)\n\n    def checkCollisions\(self\)\:\n        headX1\, headY1\, headX2\, headY2 \= self\.canvas\.coords\(self\.snakeBodies\[0\]\)\n        foodX1\, foodY1\, foodX2\, foodY2 \= self\.canvas\.coords\(self\.food\)\n        snakeBodyPos \= \[\]\n        for i in range\(2\, len\(self\.snakeBodies\)\)\:\n            snakeBodyPos\.append\(\(self\.canvas\.coords\(self\.snakeBodies\[i\]\)\[0\]\, self\.canvas\.coords\(self\.snakeBodies\[i\]\)\[1\]\)\)\n        if \(headX2 \&gt; self\.RIGHT_BORDER or\n            headY1 \&lt; self\.TOP_BORDER or\n            headX1 \&lt; self\.LEFT_BORDER or\n            headY2 \&gt; self\.BOTTOM_BORDER\)\:\n                self\.alive \= False\n        if \(headX1\, headY1\) in snakeBodyPos\:\n            self\.alive \= False\n        if \(headX2 \&gt; foodX1 or\n            headX1 \&gt; foodX2 or\n            headY1 \&lt; foodY2\)\:\n            self\.ate \= True\n\n\n\n    def start\(self\, event\)\:\n        self\.alive \= True\n\n    def stop\(self\, event\)\:\n        self\.alive \= False\n\n    def left\(self\, event\)\:\n        if self\.direction \=\= \&quot;Up\&quot;\:\n            self\.direction \= \&quot;Left\&quot;\n            self\.xMOVEMENT \= \-10\n            self\.yMOVEMENT \= 0\n        elif self\.direction \=\= \&quot;Down\&quot;\:\n            self\.direction \= \&quot;Left\&quot;\n            self\.xMOVEMENT \= \-10\n            self\.yMOVEMENT \= 0\n\n\n    def right\(self\, event\)\:\n        if self\.direction \=\= \&quot;Up\&quot;\:\n            self\.direction \= \&quot;Right\&quot;\n            self\.xMOVEMENT \= 10\n            self\.yMOVEMENT \= 0\n        elif self\.direction \=\= \&quot;Down\&quot;\:\n            self\.direction \= \&quot;Right\&quot;\n            self\.xMOVEMENT \= 10\n            self\.yMOVEMENT \= 0\n\n\n    def up\(self\, event\)\:\n        if self\.direction \=\= \&quot;Right\&quot;\:\n            self\.direction \= \&quot;Up\&quot;\n            self\.xMOVEMENT \= 0\n            self\.yMOVEMENT \= \-10\n        elif self\.direction \=\= \&quot;Left\&quot;\:\n            self\.direction \= \&quot;Up\&quot;\n            self\.xMOVEMENT \= 0\n            self\.yMOVEMENT \= \-10\n\n\n    def down\(self\, event\)\:\n        if self\.direction \=\= \&quot;Right\&quot;\:\n            self\.direction \= \&quot;Down\&quot;\n            self\.xMOVEMENT \= 0\n            self\.yMOVEMENT \= 10\n        elif self\.direction \=\= \&quot;Left\&quot;\:\n            self\.direction \= \&quot;Down\&quot;\n            self\.xMOVEMENT \= 0\n            self\.yMOVEMENT \= 10\n\n\n\n\n\nif __name__ \=\= \'__main__\'\:\n    app \= Snake\(\)</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="17" />
+    <option name="y" value="-13" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snake" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="tkinter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jobsw\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="915b93f4-4eec-4d23-b62c-b88e9a14c820" name="Default Changelist" comment="" />
+      <created>1617315794853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617315794853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3340564" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <marker date="1617747976105" expanded="true" signature="1201:1554" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="1653:2617" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="3758:3763" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="3758:3818" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="3843:6526" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="4056:4312" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="4690:5191" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="5274:5325" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="5347:5627" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="5924:5930" ph="..." />
+            <marker date="1617747976105" expanded="true" signature="6224:6229" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
